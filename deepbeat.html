@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbara Rzepka - DeepBeat AI</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+<header>
+
+  <a href="./index.html#portfolio" class="go-back">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </a>
+</header>
+<body id="top" class="icon">
+
+
+  <main>
+    <article class="container">
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="deep-banner">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Zv1w2fFlAU0?start=1702" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">DeepBeat AI<image></image></p>
+          <p class="section-text">
+            DeepBeat AI is a final Bootcamp project created in just 2 weeks.<br>
+            It's main goal was to create a product that will allow recognising wherever the ECG result is
+            normal or abnormal. We wanted to make a tool that will increase the accuracy and precision of the diagnosis
+            using Machine Learning.
+             <br>
+          </p>
+          <p class="section-text">
+            We've used input data available online as .mat and .dat files and transformed them into images in .jpg format.
+            Those images have been stored on Google Storage in order to be easly accesible by the application.
+            In order to augment the amount of data we've executed some preprocessing functions that added noise and
+            turned the rotation of images.
+            We've used a pretrained ResNet18 model using PyTorch. ResNet is a convolutional neural network that is 18 layers deep.
+            The model has been trained on a Virtual Machine created on Google Cloud and saved it's results on Google Storage
+            in order to be easily accesible from the API created for the prediction process.
+            In order to make predictions we've created a simple Website in Streamlit, that allowed uploading an image,
+            made request to the API deployed on Docker and returned the information about the diagnosis together with precision interval.
+            For better visualization of the results we used Grad Cam in order to show the areas in the image that influenced
+            final score the most.
+          </p>
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+
+                <h3 class="h4 contact-item-title"><a href="https://github.com/Dsacras/ecg_photo">DeepBeat AI Repository</a> </h3>
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
